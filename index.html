@@ -3,22 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-    <link rel="./styles/styles.css" href="style.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <h1>Adivina el número</h1>
-    <p>Introduce aquí el número</p>
-    <input type="text" name="text" class="js-box__text" />
-    <button
-      id="login-button"
-      class="login-button js-login-button"
-      type="button"
-    >
-      Prueba
-    </button>
-    <h3 class="js-message">Escribe un número y dale a Prueba</h3>
-    <h3 class="js-counter">0</h3>
+    <header>
+      <h1 class="title">Adivina el número</h1>
+      <div class="ballContainer">
+        <img
+          src="images/cristal.jpg"
+          alt="Pokemon"
+          title="Pokemon"
+          class="ball"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <form action="" class="form">
+        <label for="number" class="introduce">Introduce aquí tu número</label>
+        <div>
+          <input type="text" name="munber" id="number" class="js-box__text" />
+          <button
+            id="login-button"
+            class="login-button js-login-button"
+            type="button"
+          >
+            Prueba
+          </button>
+        </div>
+      </form>
+      <div>
+        <p class="js-message message">
+          Pista: Escribe el número y dale a prueba
+        </p>
+        <p class="attempts">
+          Número de intentos <span class="js-counter">0</span>
+        </p>
+      </div>
+    </main>
     <script src="./js/main.js" type="text/javascript"></script>
   </body>
 </html>
