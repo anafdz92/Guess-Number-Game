@@ -3,7 +3,7 @@
   color: #e70e7e;
 }
 body {
-  background-image: url("/images/this.gif");
+  background-image: url("../images/this.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
